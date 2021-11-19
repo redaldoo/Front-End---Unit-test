@@ -1,0 +1,184 @@
+@import "./../../../styles/helpers/variables";
+
+.field {
+	position: relative;
+	width: 100%;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	&.no-margin {
+		margin: 0;
+	}
+
+	&.no-bg {
+
+		textarea,
+		input,
+		label {
+			background-color: transparent;
+		}
+	}
+
+	&.no-border {
+
+		textarea,
+		input,
+		label {
+			border: none;
+
+			&:focus {
+				box-shadow: none;
+			}
+
+			&.error {
+				box-shadow: none;
+			}
+		}
+	}
+
+	textarea,
+	input,
+	label {
+		width: 100%;
+		height: 3.125rem;
+		padding: 0.75rem;
+		box-shadow: none;
+		transition: box-shadow 0.3s;
+		border-radius: 15px;
+		border: 1px solid #0000002b;
+
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 0.2rem #fed700b8;
+		}
+
+		&.error {
+			box-shadow: 0 0 0 0.2rem rgb(255 0 0 / 62%);
+		}
+	}
+
+	textarea {
+		height: 5rem;
+	}
+
+	label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		margin-bottom: 0;
+		line-height: 1.5;
+		color: $darkGrayColor;
+		pointer-events: none;
+		cursor: text;
+		border: 1px solid transparent;
+		border-radius: 0.25rem;
+		transition: all 0.1s ease-in-out;
+	}
+
+}
+
+.field textarea::-webkit-input-placeholder,
+.field input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.field textarea::-moz-placeholder,
+.field input::-moz-placeholder {
+	color: transparent;
+}
+
+.field textarea:-ms-input-placeholder,
+.field input:-ms-input-placeholder {
+	color: transparent;
+}
+
+.field textarea::-ms-input-placeholder,
+.field input::-ms-input-placeholder {
+	color: transparent;
+}
+
+.field textarea::placeholder,
+.field input::placeholder {
+	color: transparent;
+}
+
+.field textarea:not(:-moz-placeholder-shown),
+.field input:not(:-moz-placeholder-shown) {
+	padding-top: 1.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.field textarea:not(:-ms-input-placeholder),
+.field input:not(:-ms-input-placeholder) {
+	padding-top: 1.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.field textarea:not(:placeholder-shown),
+.field input:not(:placeholder-shown) {
+	padding-top: 1.25rem;
+	padding-bottom: 0.25rem;
+}
+
+.field textarea:not(:-moz-placeholder-shown)~label,
+.field input:not(:-moz-placeholder-shown)~label {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 12px;
+	color: #777;
+}
+
+.field textarea:not(:-ms-input-placeholder)~label,
+.field input:not(:-ms-input-placeholder)~label {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 12px;
+	color: #777;
+}
+
+.field textarea:not(:placeholder-shown)~label,
+.field input:not(:placeholder-shown)~label {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 12px;
+	color: #777;
+}
+
+.field textarea:-webkit-autofill~label,
+.field input:-webkit-autofill~label {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	font-size: 12px;
+	color: #777;
+}
+
+@supports (-ms-ime-align: auto) {
+	.field {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+	.field label {
+		position: static;
+	}
+
+	.field textarea::-ms-input-placeholder,
+	.field input::-ms-input-placeholder {
+		color: #777;
+	}
+}
+
+/***/
+
+.errors {
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #d20000;
+}

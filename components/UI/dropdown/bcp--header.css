@@ -1,0 +1,242 @@
+.header-pages {
+  background-color: whitesmoke;
+  height: 120px;
+  margin-block-end: 3%;
+  display: block;
+}
+
+.select {
+  width: 100%;
+  background-color: aliceblue;
+  border-block-color: inherit;
+  height: 30px;
+  width: 100%;
+}
+
+// @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+// * {
+// 	-webkit-font-smoothing: antialiased;
+// 	color: #acbdce;
+// }
+
+.ic {
+  margin: 12px;
+}
+
+// :root {
+// 	--border-radius: 10px;
+// }
+
+.Card {
+  padding: 1px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(
+    -67deg,
+    rgba(#c8d8e7, 0.7),
+    rgba(255, 255, 255, 0.8)
+  );
+  overflow: hidden;
+  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
+  width: 500px;
+  margin-left: 40%;
+  position: absolute;
+  margin-block-start: 10px;
+}
+
+.Card-two {
+  padding: 1px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(
+    -67deg,
+    rgba(#c8d8e7, 0.7),
+    rgba(255, 255, 255, 0.8)
+  );
+  overflow: hidden;
+  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
+  width: 200px;
+  margin-left: 29%;
+  position: absolute;
+  margin-block-start: 19px;
+}
+
+.CardInner {
+  padding: 16px 16px;
+  background-color: #e2e9f4;
+  border-radius: var(--border-radius);
+}
+
+.CardInner-two {
+  padding: 16px 16px;
+  background-color: #e2e9f4;
+  border-radius: var(--border-radius);
+}
+
+.container1 {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container2 {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Icon {
+  min-width: 46px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  margin-right: 12px;
+  border-color: #ff253a;
+  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
+
+  svg {
+    transform: translate(-1px, -1px);
+  }
+}
+
+.Icone {
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  border-color: #ff253a;
+
+  svg {
+    transform: translate(-1px, -1px);
+  }
+
+  margin-left: 90%;
+}
+
+label {
+  font-family: "Hind", sans-serif;
+  display: block;
+  color: #3c4b66;
+  margin-bottom: 12px;
+  background: linear-gradient(45deg, rgba(#6b7b8f, 1), #3c4b66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.InputContainer {
+  width: 100%;
+}
+
+input {
+  background-color: #e3edf7;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 600;
+  color: #a9b8c9;
+  -webkit-appearance: none;
+  transition: all 240ms ease-out;
+  width: 100%;
+
+  &::placeholder {
+    color: #6d7f8f;
+  }
+
+  &:focus {
+    outline: none;
+    color: #6d7f8f;
+    background-color: lighten(#e3edf7, 3%);
+  }
+}
+
+.InputContainer {
+  --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3;
+  --bottom-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.7);
+
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    left: 0;
+    top: 0;
+    display: block;
+    content: "";
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &:before {
+    box-shadow: var(--bottom-shadow);
+  }
+
+  &:after {
+    box-shadow: var(--top-shadow);
+  }
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box select {
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 180px;
+  border: none;
+  font-size: 20px;
+  outline: none;
+}
+
+.box::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900");
+
+h1 {
+  text-transform: Uppercase;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.2rem;
+  color: #e4e5e6;
+}
+
+h1 {
+  background: linear-gradient(to right, #24243e, #141e30, #0f0c29);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

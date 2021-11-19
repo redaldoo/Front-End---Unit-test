@@ -1,0 +1,17 @@
+.page__wrapper {
+	height: 100vh;
+	display: flex;
+	background-color: #edf2f7;
+
+	.sidebar__container {
+		display: flex;
+	}
+
+	.main__container {
+		display: flex;
+		// overflow: hidden;
+		flex: 1 1 0%;
+		flex-direction: column;
+		overflow: auto;
+	}
+}

@@ -1,0 +1,69 @@
+@import './../../styles/helpers/variables';
+
+.cart {
+	row-gap: 40px;
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		@include isDesktop {
+			width: 66.66%;
+		}
+	}
+
+	&-recap {
+		@include isDesktop {
+			width: 33.34%;
+		}
+	}
+
+	&-empty {
+		width: 100%;
+		text-align: center;
+
+		.empty-bag {
+			font-size: 70px;
+			fill: currentColor;
+			color: $greenColor;
+		}
+
+		.empty-text {
+			font-size: 18px;
+			font-weight: 700;
+			margin: 10px 0 40px;
+		}
+	}
+}
+
+.cart-total {
+	margin-bottom: 30px;
+
+	ul {
+		li {
+			font-weight: 500;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+
+			&:last-child {
+				padding-top: 12px;
+				border-top: 1px solid #c8c8c8;
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.checkout-section {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}

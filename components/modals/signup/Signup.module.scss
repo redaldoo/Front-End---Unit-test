@@ -1,0 +1,73 @@
+@import "./../../../styles/helpers/variables";
+
+.ReactModal {
+	width: 70%;
+	max-width: 800px;
+}
+
+.signup {
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	box-shadow: 0 3px 25px $blackColor;
+	overflow: hidden;
+	display: flex;
+	border-radius: $radiusContainer;
+
+	&-connect,
+	&-classic {
+		padding: 30px;
+	}
+
+	&-connect {
+		width: 30%;
+	}
+
+	&-classic {
+		width: 70%;
+	}
+
+	&-connect {
+		background: url("https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+		color: #fff;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+	}
+
+	&-classic {
+		h2 {
+			text-align: center;
+		}
+	}
+
+	&-form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		>div {
+			margin-bottom: 10px;
+		}
+
+		&--50 {
+			width: 100%;
+
+			@include isDesktop {
+				width: 50%;
+			}
+		}
+
+		&--left {
+			padding-left: 10px;
+		}
+
+		&--right {
+			padding-right: 10px;
+		}
+
+		&--100 {
+			width: 100%;
+		}
+	}
+}

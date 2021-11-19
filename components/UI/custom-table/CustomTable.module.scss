@@ -1,0 +1,74 @@
+@import "./../../../styles/helpers/variables";
+
+.custom__table {
+	box-shadow: 0px 4px 4px 2px rgb(24 28 33 / 5%);
+	color: #414141;
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: $radiusContainer;
+	background: $whiteColor;
+	border: none;
+
+
+
+	th,
+	td {
+		color: #718096;
+		padding: 0.75rem;
+		font-weight: 700;
+		display: none;
+
+		&:not(:last-child) {
+			border-right: 1px solid $grayColor;
+		}
+
+		@media (min-width: 1024px) {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		&.no-data {
+			text-align: center;
+		}
+	}
+
+	tbody {
+		tr {
+			border-top: 1px solid $grayColor;
+
+			td {
+				display: block;
+
+				@include isDesktop {
+					display: table-cell;
+				}
+			}
+
+			img {
+				height: 90px;
+			}
+
+			.span-table {
+				top: 0;
+				left: 0;
+				background-color: $grayColor;
+				display: block;
+				padding: 6px;
+				margin-bottom: 10px;
+
+				@include isDesktop {
+					display: none;
+				}
+
+				+div {
+					display: flex;
+					gap: 10px;
+					align-items: center;
+					justify-content: center;
+				}
+
+				// lg:hidden block top-0 left-0 bg-blue-200 px-2 py-1 text-xs font-bold uppercase
+			}
+		}
+	}
+}

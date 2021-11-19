@@ -1,0 +1,23 @@
+@import './../../styles/helpers/variables';
+// @import './../../node_modules/@fortawesome/free-solid-svg-icons/faCircleNotch.js';
+// @import './../../node_modules/@fortawesome/free-solid-svg-icons/';
+
+.products-sidebar {
+	@media (min-width: 1024px) {
+		width: 33.33%;
+	}
+}
+
+.products-main {
+	@media (min-width: 1024px) {
+		width: 66.34%;
+	}
+}
+
+.products-list-top {
+	margin-bottom: 40px;
+}
+
+.products-list-tri {
+	margin-bottom: 20px;
+}

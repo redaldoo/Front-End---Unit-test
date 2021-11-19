@@ -1,0 +1,107 @@
+@import './../../styles/helpers/variables';
+
+.list {
+	position: relative;
+	display: grid;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 16px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+
+	@media (min-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media (min-width: 1024px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.list-pagination {
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		background: $grayColor;
+		padding: 25px 20px 15px;
+
+		li {
+			margin: 10px 2.5px;
+
+			a {
+				display: block;
+				height: 30px;
+				width: 30px;
+				line-height: 30px;
+				text-align: center;
+				background: transparent;
+				border-radius: 50%;
+				color: $darkGrayColor;
+				font-weight: 600;
+			}
+
+			&.active,
+			&:hover {
+				a {
+					background: $orangeColor;
+					color: $whiteColor;
+				}
+			}
+
+			&.dots {
+				a {
+					cursor: initial;
+				}
+
+				&:hover {
+					a {
+						background: unset;
+						color: initial;
+					}
+				}
+			}
+
+			&.prev {
+				margin-right: 20px;
+
+				svg {
+					margin-right: 5px;
+				}
+			}
+
+			&.next {
+				margin-left: 20px;
+
+				svg {
+					margin-left: 5px;
+				}
+			}
+
+			&.prev,
+			&.next {
+				a {
+					height: auto;
+					width: auto;
+					border-radius: 0;
+					line-height: initial;
+				}
+
+				&:hover {
+					a {
+						background: unset;
+						color: $orangeColor;
+					}
+				}
+			}
+		}
+	}
+}
+
+// => @media (min-width: 640px) { ... }
+// => @media (min-width: 768px) { ... }
+// => @media (min-width: 1024px) { ... }
+// => @media (min-width: 1280px) { ... }
+// => @media (min-width: 1536px) { ... }

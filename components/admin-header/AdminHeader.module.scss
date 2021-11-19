@@ -1,0 +1,54 @@
+.header {
+	height: 70px;
+	box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	justify-content: space-between;
+	display: flex;
+	border-bottom-width: 4px;
+	border-style: solid;
+	border-color: #ecc94b;
+	background-color: #fff;
+
+	&__bars {
+		display: flex;
+		align-items: center;
+
+		button {
+			background: none;
+			border: none;
+			outline: none;
+			cursor: pointer;
+
+			&:active {
+				border-style: outset;
+			}
+
+			@media (min-width: 1024px) {
+				display: none;
+			}
+		}
+	}
+
+	&__right {
+		display: flex;
+		align-items: center;
+
+		>div {
+			position: relative;
+		}
+
+		.profile__button {
+			background: none;
+			border: none;
+			outline: none;
+			z-index: 10;
+		}
+
+		.profile__dropdown {
+			display: none;
+		}
+	}
+}

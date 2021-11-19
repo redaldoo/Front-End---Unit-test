@@ -1,0 +1,50 @@
+@import './../../styles/helpers/variables';
+
+.cart-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.card {
+
+	&-image {
+		flex: 0;
+
+		img {
+			max-height: 100px;
+			max-width: 100px;
+		}
+	}
+
+	&-details {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
+
+		.card-title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			p {
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+
+		.card-content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 10px;
+		}
+
+		.card-price {
+			font-size: 18px;
+			color: $greenColor;
+			font-weight: 700;
+		}
+	}
+}

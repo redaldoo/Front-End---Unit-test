@@ -1,0 +1,36 @@
+@import "./../../../styles/helpers/variables";
+
+.ReactModal {
+	width: 70%;
+	max-width: 600px;
+}
+
+.login {
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	box-shadow: 0 3px 25px $blackColor;
+	overflow: hidden;
+	display: flex;
+	border-radius: $radiusContainer;
+
+	&-connect,
+	&-classic {
+		width: 50%;
+		padding: 30px;
+	}
+
+	&-connect {
+		background: url("https://images.pexels.com/photos/7358/startup-photos.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+		color: #fff;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom;
+	}
+
+	&-classic {
+		h2 {
+			text-align: center;
+		}
+	}
+}

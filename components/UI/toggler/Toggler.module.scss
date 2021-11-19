@@ -1,0 +1,57 @@
+@import './../../../styles/helpers/variables';
+
+.toggler__container {
+	position: relative;
+	display: inline-block;
+	width: 2.5rem;
+	margin-right: 0.5rem;
+	transition-duration: 200ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+	vertical-align: middle;
+	user-select: none;
+
+	input {
+		width: 1.5rem;
+		position: absolute;
+		outline: 2px solid transparent;
+		outline-offset: 2px;
+		height: 1.5rem;
+		display: block;
+		cursor: pointer;
+		border-style: solid;
+		border-width: 4px;
+		border-radius: 9999px;
+		background-color: #fff;
+		appearance: none;
+		box-sizing: border-box;
+		padding: 0;
+		line-height: inherit;
+		color: inherit;
+		margin: 0;
+		transition: all .3s;
+		transform: none;
+
+		&:checked {
+			transform: translate(calc(100% - 0.5rem), 0px);
+			border-color: $blueColor;
+
+			+label {
+				background-color: $orangeColor;
+			}
+		}
+	}
+
+	label {
+		overflow: hidden;
+		height: 1.5rem;
+		display: block;
+		cursor: pointer;
+		border-radius: 9999px;
+		background-color: $grayColor;
+	}
+
+	+label {
+		color: $darkGrayColor;
+	}
+}

@@ -1,0 +1,129 @@
+@import './../../styles/helpers/variables';
+
+.shop-widget {
+	background: #fff;
+	box-shadow: 0px 1px 16px 0px rgb(117 114 114 / 7%);
+	padding: 30px;
+	margin-bottom: 40px;
+	border-radius: 15px;
+
+	&--last {
+		margin-bottom: 0;
+	}
+
+	.widget-title {
+		margin-bottom: 10px;
+	}
+
+	.selected a {
+		color: $orangeColor !important;
+	}
+
+	.widget-filter {
+		ul {
+			li {
+				display: flex;
+				margin-bottom: 15px;
+				overflow: hidden;
+				align-items: center;
+				justify-content: space-between;
+				cursor: pointer;
+
+				a {
+					float: left;
+					position: relative;
+					padding-left: 20px;
+					font-size: 14px;
+					color: $darkGrayColor;
+					line-height: 26px;
+					font-weight: 600;
+
+					&::before {
+						content: "\f1ce";
+						position: absolute;
+						left: 0;
+						top: 0;
+						font-family: "Font Awesome 5 Free";
+						font-weight: 700;
+						font-size: 12px;
+						transition: all 0.3s ease-out 0s;
+					}
+				}
+
+				&:hover {
+					a {
+						&:before {
+							color: $orangeColor;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.widget-price {
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 10px;
+		color: $darkGrayColor;
+		text-transform: uppercase;
+		margin-right: 5px;
+	}
+
+	.widget-size {
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 5px;
+
+			li {
+				a {
+					display: block;
+					width: 36px;
+					height: 34px;
+					line-height: 30px;
+					text-align: center;
+					border: 3px solid $grayColor;
+					font-size: 14px;
+					color: $darkGrayColor;
+				}
+
+				&:hover {
+					a {
+						border-color: $orangeColor;
+						background: $orangeColor;
+						color: $whiteColor;
+					}
+				}
+			}
+		}
+	}
+
+	.widget-separator {
+		border-top: 1px dashed #dbdbdb;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.widget-localisation {
+		.localisation-input {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			input {
+				// padding: 10px;
+				font-size: 16px;
+				width: 100%;
+				// border-radius: 4px;
+				// border: 2px solid $grayColor;
+
+				&:focus,
+				&:focus-visible {
+					border-color: $blueColor;
+				}
+			}
+		}
+	}
+}

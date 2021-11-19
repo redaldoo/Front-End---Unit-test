@@ -1,0 +1,15 @@
+{
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.associations": {
+    "*.ts": "typescript",
+    "*.js": "javascriptreact"
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": false
+}

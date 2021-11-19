@@ -1,0 +1,33 @@
+/**
+* Font Family
+*/
+$mainFont: 'Raleway',
+sans-serif;
+$secondaryFont: 'Playfair Display',
+serif;
+
+/**
+* Colors
+*/
+$whiteColor: #fff;
+$blackColor: #000;
+$darkGrayColor: #707070;
+$grayColor: #F4F1EF;
+$blueColor: #8493ca;
+$greenColor: #32b87d;
+$orangeColor: #ffa800;
+
+/**
+* Mise en forme
+*/
+$radiusContainer: 15px;
+$radiusButton: 20px;
+
+/**
+* Mixin Responsive
+*/
+@mixin isDesktop {
+	@media (min-width: 1024px) {
+		@content;
+	}
+}

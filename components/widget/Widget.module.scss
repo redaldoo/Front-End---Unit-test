@@ -1,0 +1,60 @@
+@import './../../styles/helpers/variables';
+
+.widget {
+	background: #fff;
+	padding: 20px;
+	border-radius: $radiusContainer;
+	box-shadow: 0px 4px 4px 2px rgb(24 28 33 / 5%);
+	display: flex;
+	flex-direction: column;
+
+	&__header {
+		flex: 0;
+	}
+
+	&__content {
+		flex: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		&--no-pt {
+			padding-top: 0;
+		}
+	}
+
+	&__footer {
+		flex: 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		.footer {
+
+			&__left,
+			&__center,
+			&__right {
+				// width: 50%;
+				font-size: 14px;
+				font-weight: 600;
+				padding-left: 5px;
+				color: $darkGrayColor;
+			}
+
+			&__left {
+				flex: 1;
+				text-align: left;
+				padding-right: 5px;
+			}
+
+			&__right {
+				flex: 0;
+				text-align: right;
+				padding-left: 5px;
+			}
+
+			&__center {
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+}

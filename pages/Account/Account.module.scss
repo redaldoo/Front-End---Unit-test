@@ -1,0 +1,60 @@
+.row {
+	justify-content: center
+}
+.button {
+	margin-block : 10px
+}
+.threeD {
+	color: rgb(128, 65, 65);
+	white-space: nowrap;
+	height:	 10px;
+  font-size: 1.5em;
+	font-family: sans-serif;
+	letter-spacing: 0.1em;
+}
+@import "./../../styles/helpers/variables";
+
+.account-sidebar {
+	background: #fff;
+	box-shadow: 0px 1px 16px 0px rgb(117 114 114 / 7%);
+	padding: 30px;
+	margin-bottom: 40px;
+	border-radius: $radiusContainer;
+	width: 350px;
+	display: block;
+
+	.menu-list {
+		.menu-item {
+			color: $darkGrayColor;
+			display: block;
+			align-items: center;
+			gap: 20px;
+			font-weight: 600;
+			margin-bottom: 20px;
+
+			svg {
+				color: inherit;
+				transition: all .3s;
+			}
+
+			&--active {
+				color: $orangeColor;
+			}
+
+			&:hover {
+				svg {
+					color: $orangeColor;
+				}
+			}
+		}
+
+		li {
+			&:last-child {
+				.menu-item {
+					margin: 0;
+				}
+			}
+		}
+	}
+	
+}

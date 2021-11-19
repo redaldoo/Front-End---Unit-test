@@ -1,0 +1,37 @@
+@import './../../styles/helpers/variables';
+
+.checkout {
+	row-gap: 40px;
+
+	&-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		@include isDesktop {
+			width: 66.66%;
+		}
+	}
+}
+
+.checkout-form {
+	margin-top: 20px;
+
+	.input-group {
+		width: 50%;
+		padding: 15px;
+
+		&-full {
+			width: 100%;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input {
+			border-radius: 4px;
+		}
+	}
+}

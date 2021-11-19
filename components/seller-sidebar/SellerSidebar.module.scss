@@ -1,0 +1,43 @@
+@import "./../../styles/helpers/variables";
+
+.account-sidebar {
+	background: #fff;
+	box-shadow: 0px 1px 16px 0px rgb(117 114 114 / 7%);
+	padding: 30px;
+	margin-bottom: 40px;
+	border-radius: $radiusContainer;
+
+	.menu-list {
+		.menu-item {
+			color: $darkGrayColor;
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			font-weight: 600;
+			margin-bottom: 20px;
+
+			svg {
+				color: inherit;
+				transition: all .3s;
+			}
+
+			&--active {
+				color: $orangeColor;
+			}
+
+			&:hover {
+				svg {
+					color: $orangeColor;
+				}
+			}
+		}
+
+		li {
+			&:last-child {
+				.menu-item {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

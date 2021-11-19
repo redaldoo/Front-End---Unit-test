@@ -1,0 +1,17 @@
+@import './../../../../styles/helpers/variables';
+
+.form__products {
+	display: flex;
+	flex-wrap: wrap;
+
+	.form__field {
+		width: 100%;
+		padding: 5px;
+
+		&--50 {
+			@include isDesktop {
+				width: 50%;
+			}
+		}
+	}
+}
